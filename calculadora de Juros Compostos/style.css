@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family= Poppins: wght @300;400;500 & display=swap');
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#e66465, #9198e5);
+    color: white;
+}
+
+#calculater{
+    background-color: black;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px (rgba(0,0,0, 0.323));
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculater h2{
+    font-size: 30px;
+    position: relative;
+}
+
+#calculater h2::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: linear-gradient(90deg,#e66465, #9198e5);
+    bottom: 5px;
+}
+
+#input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+
+.input-field label{
+    font-size: 15px;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1pxs solid purple;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input-field input:focus{
+    outline: none;
+}
+
+#result{
+    text-align: center;
+}
+
+#total{
+    font-size: 40px;
+}
+
+#calcular{
+    background:linear-gradient(90deg,#e66465, #9198e5) ;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    border: 4px;
+    cursor: pointer;
+}
